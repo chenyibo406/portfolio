@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./resume.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="lan-change">
+        <div class="lan-switch-box">
+          <div class="btn" id="btn"></div>
+          <button
+            type="button"
+            onclick="leftClick()"
+            data-filter=".en-resume"
+            class="toggle-btn"
+          >
+            EN
+          </button>
+          <button
+            type="button"
+            onclick="rightClick()"
+            data-filter=".cn-resume"
+            class="toggle-btn"
+          >
+            CN
+          </button>
+        </div>
+      </div>
+      <div class="resume-box">
+        <div class="mix en-resume">
+          <div class="top">
+            <div class="imgBx">
+              <div class="box">
+                <img src="./PROFILE.jpg" height="300" alt="" />
+              </div>
+            </div>
+            <div class="profileText">
+              <h3>
+                Austin <br />
+                Chen
+                <br />
+                <span>Web Developer</span>
+              </h3>
+            </div>
+          </div>
+          <div class="contentBox">
+            <div class="leftSide">
+              <h3>Contact Info</h3>
+              <ul>
+                <li>
+                  <span class="icon">
+                    <i class="bx bx-phone"></i>
+                  </span>
+                  <span class="text">+8613378653841</span>
+                </li>
+                <li>
+                  <span class="icon">
+                    <i class="bx bx-envelope"></i>
+                  </span>
+                  <span class="text">chenyibo416@gmail.com</span>
+                </li>
+                <li>
+                  <span class="icon">
+                    <i class="bx bx-pointer"></i>
+                  </span>
+                  <span class="text"
+                    ><a
+                      href="https://chenyibo406.github.io/portfolio/#home"
+                      target="_blank"
+                      >www.chenyibo416.com</a
+                    ></span
+                  >
+                </li>
+                <li>
+                  <span class="icon">
+                    <i class="bx bx-location-plus"></i>
+                  </span>
+                  <span class="text">Shenzhen, China</span>
+                </li>
+              </ul>
+              <h3>Education</h3>
+              <ul class="education">
+                <li>
+                  <h5>2022.08-current</h5>
+                  <h4>Self-taught Web Developer</h4>
+                  <h6>Self Learning</h6>
+                </li>
+                <li>
+                  <h5>2009.09-2013.06</h5>
+                  <h4>Tianjin University of Technology</h4>
+                  <h6>Bachelor Degree of Materials Science</h6>
+                </li>
+              </ul>
+              <h3>Projects</h3>
+              <ul class="projects">
+                <li>
+                  <h5>MERN Projects / Github</h5>
+                </li>
+                <li>
+                  <h5>Websites Challenge / Github</h5>
+                </li>
+                <li>
+                  <h5>Web Applications / Github</h5>
+                </li>
+                <li>
+                  <h5>Frontend Effect Study / Github</h5>
+                </li>
+                <li>
+                  <h5>My Publishment / GoogleDoc</h5>
+                </li>
+              </ul>
+
+              <h3>Language</h3>
+              <ul class="language">
+                <li>
+                  <span class="text">English</span>
+                  <span class="percent">
+                    <div style="width: 90%"></div>
+                  </span>
+                </li>
+                <li>
+                  <span class="text">Mandarin Chinese</span>
+                  <span class="percent">
+                    <div style="width: 90%"></div>
+                  </span>
+                </li>
+                <li>
+                  <span class="text">Cantonese</span>
+                  <span class="percent">
+                    <div style="width: 70%"></div>
+                  </span>
+                </li>
+              </ul>
+              <h3>Interest</h3>
+              <ul class="interest">
+                <li>
+                  <span class="icon">
+                    <i class="bx bx-run"></i>
+                  </span>
+                  Exercises
+                </li>
+                <li>
+                  <span class="icon">
+                    <i class="bx bx-book-reader"></i>
+                  </span>
+                  Reading
+                </li>
+                <li>
+                  <span class="icon">
+                    <i class="bx bxs-edit-alt"></i>
+                  </span>
+                  Blog
+                </li>
+                <li>
+                  <span class="icon">
+                    <i class="bx bxs-plane-alt"></i>
+                  </span>
+                  Traveling
+                </li>
+              </ul>
+            </div>
+            <div class="rightSide">
+              <div class="about">
+                <h3>Profile</h3>
+                <p>
+                  I am a self-taught web developer and designer with experience
+                  building creative and functional websites and applications. I
+                  am confident for my coding skills and my achievements as
+                  creating multiple Websites and Application. <br />
+                  <br />
+                  Focus at frontend effect and bring the best user-friendly and
+                  cutting edge design to clients. I love to coach others on
+                  being a successful self-taught programmer with self-published
+                  guidebook, The Ultimate Guide to Be A Web Developer (Frontend
+                  & Backend).
+                </p>
+              </div>
+              <div class="about">
+                <h3>Experience</h3>
+                <div class="box">
+                  <div class="year_company">
+                    <h5>2022.08-current</h5>
+                    <h5>Creating MERN Applications & Websites</h5>
+                  </div>
+                  <div class="text">
+                    <h4>Web Developer</h4>
+                    <p>
+                      Create MERN Applications from both client side and server
+                      side including an social media application, e-commercial
+                      application, youtube clone websites. <br />
+
+                      Client side was built with React, Redux, Bootstrap, and
+                      Material UI and backend was build with NodeJS, ExpressJS,
+                      Mongodb.
+                    </p>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="year_company">
+                    <h5>2022.08-current</h5>
+                    <h5>Create Websites & Applications Challenge</h5>
+                  </div>
+                  <div class="text">
+                    <h4>Web Developer</h4>
+                    <p>
+                      self-challenge on creating cutting-edge and intriguing
+                      websites with HTML/CSS/JavaScript, Bootstrap, Tailwind and
+                      Sass.<br />
+                    </p>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="year_company">
+                    <h5>2022.08-current</h5>
+                    <h5>Build intriguing frontend effect projects.</h5>
+                  </div>
+                  <div class="text">
+                    <h4>Web Developer</h4>
+                    <p>
+                      Study and create intriguing frontend effect with projects
+                      and Learning notes.
+                      <br />
+                    </p>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="year_company">
+                    <h5>2022.08-current</h5>
+                    <h5>Self-publishment</h5>
+                  </div>
+                  <div class="text">
+                    <h4>Developer Tutor</h4>
+                    <p>
+                      Composing a clear guidebook with exercises for self-taught
+                      newbies to get web design and web development industry.
+                      <br />
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="about skills">
+                <h3>Professional Skills</h3>
+                <div class="skill-set">
+                  <div class="box">
+                    <h4>HTML</h4>
+                    <!-- <span class="percent">
+                      <div style="width: 80%"></div>
+                    </span> -->
+                  </div>
+                  <div class="box">
+                    <h4>CSS</h4>
+                    <!-- <span class="percent">
+                      <div style="width: 80%"></div>
+                    </span> -->
+                  </div>
+                  <div class="box">
+                    <h4>JAVASCRIPT</h4>
+                    <!-- <span class="percent">
+                      <div style="width: 80%"></div>
+                    </span> -->
+                  </div>
+                  <div class="box">
+                    <h4>REACT</h4>
+                    <!-- <span class="percent">
+                      <div style="width: 80%"></div>
+                    </span> -->
+                  </div>
+                  <div class="box">
+                    <h4>REDUX</h4>
+                    <!-- <span class="percent">
+                      <div style="width: 70%"></div>
+                    </span> -->
+                  </div>
+                  <div class="box">
+                    <h4>SQL</h4>
+                    <!-- <span class="percent">
+                      <div style="width: 70%"></div>
+                    </span> -->
+                  </div>
+                  <div class="box">
+                    <h4>GIT</h4>
+                    <!-- <span class="percent">
+                      <div style="width: 70%"></div>
+                    </span> -->
+                  </div>
+                  <div class="box">
+                    <h4>MONGODB/SANITY</h4>
+                    <!-- <span class="percent">
+                      <div style="width: 70%"></div>
+                    </span> -->
+                  </div>
+                  <div class="box">
+                    <h4>FIGMA</h4>
+                    <!-- <span class="percent">
+                      <div style="width: 70%"></div>
+                    </span> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mix cn-resume">
+          <div class="top">
+            <div class="imgBx">
+              <div class="box">
+                <img src="./PROFILE.jpg" height="300" alt="" />
+              </div>
+            </div>
+            <div class="profileText">
+              <h3>
+                陈 贻勃
+                <br />
+                <span>全栈程序员</span>
+              </h3>
+            </div>
+          </div>
+          <div class="contentBox">
+            <div class="leftSide">
+              <h3>联系方式</h3>
+              <ul>
+                <li>
+                  <span class="icon">
+                    <i class="bx bx-phone"></i>
+                  </span>
+                  <span class="text">+8613378653841</span>
+                </li>
+                <li>
+                  <span class="icon">
+                    <i class="bx bx-envelope"></i>
+                  </span>
+                  <span class="text">chenyibo416@gmail.com</span>
+                </li>
+                <li>
+                  <span class="icon">
+                    <i class="bx bx-pointer"></i>
+                  </span>
+                  <span class="text"
+                    ><a
+                      href="https://chenyibo406.github.io/portfolio/#home"
+                      target="_blank"
+                      >www.chenyibo416.com</a
+                    ></span
+                  >
+                </li>
+                <li>
+                  <span class="icon">
+                    <i class="bx bx-location-plus"></i>
+                  </span>
+                  <span class="text">Shenzhen, China</span>
+                </li>
+              </ul>
+              <h3>教育背景</h3>
+              <ul class="education">
+                <li>
+                  <h5>2022.08-目前</h5>
+                  <h4>自学全栈程序员</h4>
+                  <h6>自学前端和后端开发</h6>
+                </li>
+                <li>
+                  <h5>2009.09-2013.06</h5>
+                  <h4>天津理工大学</h4>
+                  <h6>材料科学与工程</h6>
+                </li>
+              </ul>
+              <h3>项目经验</h3>
+              <ul class="projects">
+                <li>
+                  <h5>MERN Projects / Github</h5>
+                </li>
+                <li>
+                  <h5>Websites Challenge / Github</h5>
+                </li>
+                <li>
+                  <h5>Web Applications / Github</h5>
+                </li>
+                <li>
+                  <h5>Frontend Effect Study / Github</h5>
+                </li>
+                <li>
+                  <h5>My Publishment / GoogleDoc</h5>
+                </li>
+              </ul>
+
+              <h3>语言能力</h3>
+              <ul class="language">
+                <li>
+                  <span class="text">英语</span>
+                  <span class="percent">
+                    <div style="width: 90%"></div>
+                  </span>
+                </li>
+
+                <li>
+                  <span class="text">粤语</span>
+                  <span class="percent">
+                    <div style="width: 70%"></div>
+                  </span>
+                </li>
+              </ul>
+              <h3>兴趣爱好</h3>
+              <ul class="interest">
+                <li>
+                  <span class="icon">
+                    <i class="bx bx-run"></i>
+                  </span>
+                  健身
+                </li>
+                <li>
+                  <span class="icon">
+                    <i class="bx bx-book-reader"></i>
+                  </span>
+                  阅读
+                </li>
+                <li>
+                  <span class="icon">
+                    <i class="bx bxs-edit-alt"></i>
+                  </span>
+                  写博客
+                </li>
+                <li>
+                  <span class="icon">
+                    <i class="bx bxs-plane-alt"></i>
+                  </span>
+                  旅游
+                </li>
+              </ul>
+            </div>
+            <div class="rightSide">
+              <div class="about">
+                <h3>Profile</h3>
+                <p>
+                  坚持英语全文自学前端和后端开发。自学完成多个全栈应用和网站搭建。
+                  喜欢专研用户体验优化和前端特效。对自己的代码能力有所自觉，并不断提高自己
+                  的代码质量和程序设计思考能力。
+
+                  <br />
+                  <br />
+                  喜欢分享自己的自学心路历程，目前正在编写互联网开发指导教程一书，
+                  《The Ultimate Guide to Be A Web Developer (Frontend &
+                  Backend).》
+                </p>
+              </div>
+              <div class="about">
+                <h3>Experience</h3>
+                <div class="box">
+                  <div class="year_company">
+                    <h5>2022.08-current</h5>
+                    <h5>
+                      创建多个全栈应用 <br />
+                      和网站
+                      <br />
+                      MERN Applications <br />
+                      & Websites
+                    </h5>
+                  </div>
+                  <div class="text">
+                    <h4>全栈开发程序员</h4>
+                    <p>
+                      创建多个MERN应用，包括社交媒体应用，电子商店应用和克隆热门视频网站等等。
+                      前端使用了React, Redux, Bootstrap, and Material UI，
+                      后端使用了 NodeJS, ExpressJS, Mongodb 等等。
+                    </p>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="year_company">
+                    <h5>2022.08-current</h5>
+                    <h5>
+                      挑战创建网站和 <br />
+                      网络应用
+                    </h5>
+                  </div>
+                  <div class="text">
+                    <h4>网络开发程序员</h4>
+                    <p>
+                      使用HTML/CSS/JavaScript, Bootstrap, Tailwind and
+                      Sass创建多个有趣并且流行的网站和网络 。<br />
+                    </p>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="year_company">
+                    <h5>2022.08-current</h5>
+                    <h5>专研前端技术和优化用户体验</h5>
+                  </div>
+                  <div class="text">
+                    <h4>网页开发</h4>
+                    <p>
+                      学习和专研有趣和流行的前端技术，并且创建相应的项目。
+                      <br />
+                    </p>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="year_company">
+                    <h5>2022.08-current</h5>
+                    <h5>撰写书籍</h5>
+                  </div>
+                  <div class="text">
+                    <h4>学习指导</h4>
+                    <p>
+                      独立撰写自学指导书籍，从而为自学新手提供清晰的网络设计和网络开发指导。
+
+                      <br />
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="about skills">
+                <h3>技能</h3>
+                <div class="skill-set">
+                  <div class="box">
+                    <h4>HTML</h4>
+                    <!-- <span class="percent">
+                      <div style="width: 80%"></div>
+                    </span> -->
+                  </div>
+                  <div class="box">
+                    <h4>CSS</h4>
+                    <!-- <span class="percent">
+                      <div style="width: 80%"></div>
+                    </span> -->
+                  </div>
+                  <div class="box">
+                    <h4>JAVASCRIPT</h4>
+                    <!-- <span class="percent">
+                      <div style="width: 80%"></div>
+                    </span> -->
+                  </div>
+                  <div class="box">
+                    <h4>REACT</h4>
+                    <!-- <span class="percent">
+                      <div style="width: 80%"></div>
+                    </span> -->
+                  </div>
+                  <div class="box">
+                    <h4>REDUX</h4>
+                    <!-- <span class="percent">
+                      <div style="width: 70%"></div>
+                    </span> -->
+                  </div>
+                  <div class="box">
+                    <h4>SQL</h4>
+                    <!-- <span class="percent">
+                      <div style="width: 70%"></div>
+                    </span> -->
+                  </div>
+                  <div class="box">
+                    <h4>GIT</h4>
+                    <!-- <span class="percent">
+                      <div style="width: 70%"></div>
+                    </span> -->
+                  </div>
+                  <div class="box">
+                    <h4>MONGODB/SANITY</h4>
+                    <!-- <span class="percent">
+                      <div style="width: 70%"></div>
+                    </span> -->
+                  </div>
+                  <div class="box">
+                    <h4>FIGMA</h4>
+                    <!-- <span class="percent">
+                      <div style="width: 70%"></div>
+                    </span> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./mixitup.min.js"></script>
+    <script src="./resume.js"></script>
+  </body>
+</html>

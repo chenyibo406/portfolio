@@ -16,6 +16,7 @@ const designPage = document.querySelector(".design-page");
 
 let capabilityEls = document.querySelectorAll(".capability-card");
 let publishmentPage = document.querySelectorAll(".get-book-link");
+let resumePage = document.querySelectorAll(".resume-card");
 
 let webChallengeEl = document.querySelectorAll(".websites-challenge");
 let webAppEl = document.querySelectorAll(".web-applications");
@@ -26,14 +27,31 @@ let designEl = document.querySelectorAll(".design-card");
 let cardEls = document.querySelectorAll(".card");
 
 let projectCardEls = document.querySelectorAll(".project-card");
-// let navEl = document.querySelector("nav");
 let projectLinkEls = document.querySelectorAll(".project-link");
 
-// projectLinkEls.forEach((element) => {
-//   element.classList.add("deactive-display");
-// });
+// Navbar
 
-// console.log(navEl);
+const header = document.querySelector("header");
+window.addEventListener("scroll", function () {
+  header.classList.toggle("sticky", window.scrollY > 50);
+});
+
+let menuIcon = document.querySelector("#menu-icon");
+let navlist = document.querySelector(".navlist");
+
+menuIcon.onclick = () => {
+  menuIcon.classList.toggle("bx-x");
+  navlist.classList.toggle("open");
+  header.classList.toggle("open");
+};
+
+// window.onscroll = () => {
+//   menuIcon.classList.remove("bx-x");
+//   navlist.classList.remove("open");
+//   console.log("hello");
+// };
+
+// Project cards for hover effect
 
 projectCardEls.forEach((element) => {
   element.addEventListener("mouseover", () => {
@@ -47,21 +65,7 @@ projectCardEls.forEach((element) => {
   });
 });
 
-// let projectCards = document.querySelectorAll(".project-card");
-// let projectCardImg = document.getElementById("project-img");
-
-// let circleEl = document.getElementById("circle");
-// circleEl.addEventListener("click", () => {
-//   if (circleEl.classList.contains("bx-plus-circle")) {
-//     circleEl.classList.remove("bx-plus-circle");
-//     navEl.classList.style.display = "flex";
-//     circleEl.classList.add("bx-minus-circle");
-//   } else if (circleEl.classList.contains("bx-minus-circle")) {
-//     circleEl.classList.remove("bx-minus-circle");
-//     navEl.classList.style.display = "none";
-//     circleEl.classList.add("bx-plus-circle");
-//   }
-// });
+// Card component for hover arrow animation effect
 
 cardEls.forEach((element) => {
   element.addEventListener("mouseover", () => {
@@ -82,6 +86,8 @@ cardEls.forEach((element) => {
   });
 });
 
+// Publishment card for opening the link
+
 publishmentPage.forEach((element) => {
   element.addEventListener("click", () => {
     window.open(
@@ -89,6 +95,18 @@ publishmentPage.forEach((element) => {
     );
   });
 });
+
+// resume card for opening resume page
+
+resumePage.forEach((element) => {
+  element.addEventListener("click", () => {
+    console.log("hello");
+    window.open("./resume/resume.html");
+  });
+});
+
+// Home, about, work, contact page for opening each page without
+// causing appendix to others
 
 getHomeEls.forEach((element) => {
   element.addEventListener("click", () => {
