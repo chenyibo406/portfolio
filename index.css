@@ -717,7 +717,7 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  /* gap: 80px; */
 }
 
 .project-card img {
@@ -730,7 +730,7 @@ form {
   color: #fff;
   position: absolute;
   opacity: 0.4;
-  font-size: 3rem;
+  font-size: 4vw;
   text-transform: uppercase;
 }
 
@@ -754,8 +754,9 @@ form {
 }
 
 .project-link i {
-  font-size: 100px;
-  padding: 0 40px;
+  font-size: 9vw;
+  padding: 0 20px;
+  /* gap: 60px; */
   opacity: 0.3;
   cursor: pointer;
   transition: all 250ms ease-in-out;
@@ -1083,6 +1084,10 @@ footer nav ul li {
 }
 
 @media only screen and (max-width: 665px) {
+  .project-card h2 {
+    font-size: 11vw;
+  }
+
   .on-projects .content {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
