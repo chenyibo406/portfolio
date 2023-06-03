@@ -1,11 +1,16 @@
+/* Font ----------------------------------------------- */
+
 @import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Foldit:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
+/* Reset ----------------------------------------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+/* Body ----------------------------------------------- */
 
 body {
   background: #f9f9f9;
@@ -14,6 +19,8 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+
+/* Switch Button -------------------------------------- */
 
 .lan-switch-box {
   width: 220px;
@@ -43,17 +50,7 @@ body {
   transition: 0.5s;
 }
 
-/* .cn-resume {
-  display: none;
-} */
-
-/* .active-display {
-  display: block;
-}
-
-.deactive-display {
-  display: none;
-} */
+/* Main Container ----------------------------------------------- */
 
 .container {
   position: relative;
@@ -66,6 +63,8 @@ body {
   border-right: 50px solid #fff;
 }
 
+/* Top Column ----------------------------------------------- */
+
 .container .top {
   position: relative;
   display: grid;
@@ -73,6 +72,8 @@ body {
   padding: 40px;
   padding-bottom: 0;
 }
+
+/* - Profile image - */
 
 .container .top .imgBx {
   position: relative;
@@ -121,6 +122,8 @@ body {
   top: -10px;
 }
 
+/* .Main Content  ----------------------------------------------- */
+
 .container .contentBox {
   position: relative;
   min-height: 500px;
@@ -128,6 +131,8 @@ body {
   grid-template-columns: 1fr 2fr;
   padding: 0 40px 40px;
 }
+
+/* -Contact Info - */
 
 .container .contentBox h3 {
   border-left: 4px solid #ff8bb3;
@@ -160,6 +165,8 @@ body {
   color: #3590d2;
 }
 
+/* -Education - */
+
 .container .contentBox ul.education li {
   flex-direction: column;
   margin: 25px 0;
@@ -179,6 +186,8 @@ h6 {
   font-weight: 300;
   font-size: 1em;
 }
+
+/* -language- */
 
 .language li {
   flex-direction: column;
@@ -208,6 +217,8 @@ h6 {
   height: 100%;
   background: #3590d2;
 }
+
+/* -Interest- */
 
 .container .contentBox ul.interest {
   position: relative;
@@ -242,6 +253,8 @@ h6 {
 p {
   font-style: 300;
 }
+
+/* right column  -----------------------------------------------  */
 
 .rightSide {
   padding-left: 40px;
@@ -310,3 +323,15 @@ p {
   height: 100%;
   background: #3590d2;
 } */
+
+.cn-resume {
+  display: none;
+}
+
+.active-display {
+  display: initial;
+}
+
+/* .deactive-display {
+  display: none;
+}  */

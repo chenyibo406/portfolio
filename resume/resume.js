@@ -11,7 +11,7 @@ function leftClick() {
 function rightClick() {
   btn.style.left = "110px";
   //   enResume.classList.add("deactive-display");
-  //   cnResume.classList.add("active-display");
+  cnResume.classList.add("active-display");
 }
 
 var mixer = mixitup(".resume-box");

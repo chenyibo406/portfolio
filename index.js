@@ -41,13 +41,21 @@ let navlist = document.querySelector(".navlist");
 
 menuIcon.onclick = () => {
   menuIcon.classList.toggle("bx-x");
+  // navlist.classList.toggle("active-display");
   navlist.classList.toggle("open");
-  header.classList.toggle("open");
+  // header.classList.toggle("sticky");
 };
 
+// menuIcon.addEventListener("click", () => {
+//   console.log("hello");
+//   navlist.classList.add("active-display");
+// });
+
+// const headerSticky = document.querySelector("header.sticky");
 // window.onscroll = () => {
-//   menuIcon.classList.remove("bx-x");
-//   navlist.classList.remove("open");
+//   // menuIcon.classList.remove("bx-x");
+//   // navlist.classList.remove("open");
+//   // header.classList.remove("sticky");
 //   console.log("hello");
 // };
 
