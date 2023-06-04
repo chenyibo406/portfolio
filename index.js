@@ -13,6 +13,9 @@ const webAppPage = document.querySelector(".web-app-page");
 const fullStackPage = document.querySelector(".fullstack-page");
 const cssEffectPage = document.querySelector(".css-effect-page");
 const designPage = document.querySelector(".design-page");
+const thankYouEl = document.querySelector(".thank-you");
+
+const sendEmail = document.querySelector(".send-email");
 
 let capabilityEls = document.querySelectorAll(".capability-card");
 let publishmentPage = document.querySelectorAll(".get-book-link");
@@ -241,4 +244,16 @@ designEl.forEach((element) => {
     webChallengePage.classList.remove("active-page");
     designPage.classList.add("active-page");
   });
+});
+
+// Send Email
+sendEmail.addEventListener("click", () => {
+  projectsPageEl.classList.remove("active-page");
+  cssEffectPage.classList.remove("active-page");
+  fullStackPage.classList.remove("active-page");
+  webAppPage.classList.remove("active-page");
+  webChallengePage.classList.remove("active-page");
+  designPage.classList.remove("active-page");
+
+  thankYouEl.classList.add("active-page");
 });

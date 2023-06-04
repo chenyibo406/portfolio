@@ -65,7 +65,7 @@ body {
 }
 
 .active-page {
-  display: grid;
+  display: flex;
 }
 
 .deactive-page {
@@ -745,6 +745,20 @@ form {
 .design-container h2,
 .design-container i {
   color: red;
+}
+
+/* Thank You -------------------------------------- */
+.thank-you .container {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.thank-you h1 {
+  font-size: 9vw;
 }
 
 /* Footer -------------------------------------- */
