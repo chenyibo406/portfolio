@@ -247,13 +247,7 @@ designEl.forEach((element) => {
 });
 
 // Send Email
-// sendEmail.addEventListener("click", () => {
-//   projectsPageEl.classList.remove("active-page");
-//   cssEffectPage.classList.remove("active-page");
-//   fullStackPage.classList.remove("active-page");
-//   webAppPage.classList.remove("active-page");
-//   webChallengePage.classList.remove("active-page");
-//   designPage.classList.remove("active-page");
-
-//   thankYouEl.classList.add("active-page");
-// });
+sendEmail.addEventListener("click", () => {
+  contactPageEl.classList.remove("active-page");
+  thankYouEl.classList.toggle("active");
+});
