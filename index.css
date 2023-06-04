@@ -306,8 +306,8 @@ img:not(.project-img):hover {
 .capability-card,
 .work-card {
   display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
+  flex-direction: column;
+  align-items: start;
   justify-content: space-evenly;
 }
 
