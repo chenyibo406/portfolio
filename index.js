@@ -13,9 +13,9 @@ const webAppPage = document.querySelector(".web-app-page");
 const fullStackPage = document.querySelector(".fullstack-page");
 const cssEffectPage = document.querySelector(".css-effect-page");
 const designPage = document.querySelector(".design-page");
-const thankYouEl = document.querySelector(".thank-you");
 
-const sendEmail = document.querySelector(".send-email");
+// const thankYouEl = document.querySelector(".thank-you");
+// const sendEmail = document.querySelector(".send-email");
 
 let capabilityEls = document.querySelectorAll(".capability-card");
 let publishmentPage = document.querySelectorAll(".get-book-link");
@@ -30,9 +30,10 @@ let designEl = document.querySelectorAll(".design-card");
 let cardEls = document.querySelectorAll(".card");
 
 let projectCardEls = document.querySelectorAll(".project-card");
-let projectLinkEls = document.querySelectorAll(".project-link");
 
-// Navbar
+// let projectLinkEls = document.querySelectorAll(".project-link");
+
+// * Navbar
 
 const header = document.querySelector("header");
 window.addEventListener("scroll", function () {
@@ -62,7 +63,7 @@ menuIcon.onclick = () => {
 //   console.log("hello");
 // };
 
-// Project cards for hover effect
+// * Project cards for hover effect
 
 projectCardEls.forEach((element) => {
   element.addEventListener("mouseover", () => {
@@ -76,7 +77,7 @@ projectCardEls.forEach((element) => {
   });
 });
 
-// Card component for hover arrow animation effect
+// * Card component for hover arrow animation effect
 
 cardEls.forEach((element) => {
   element.addEventListener("mouseover", () => {
@@ -97,7 +98,7 @@ cardEls.forEach((element) => {
   });
 });
 
-// Publishment card for opening the link
+// * Publishment card for opening the link
 
 publishmentPage.forEach((element) => {
   element.addEventListener("click", () => {
@@ -107,7 +108,7 @@ publishmentPage.forEach((element) => {
   });
 });
 
-// resume card for opening resume page
+// * resume card for opening resume page
 
 resumePage.forEach((element) => {
   element.addEventListener("click", () => {
@@ -116,8 +117,8 @@ resumePage.forEach((element) => {
   });
 });
 
-// Home, about, work, contact page for opening each page without
-// causing appendix to others
+// * Home, about, work, contact page for opening each page without
+// * causing appendix to others
 
 getHomeEls.forEach((element) => {
   element.addEventListener("click", () => {
@@ -246,8 +247,8 @@ designEl.forEach((element) => {
   });
 });
 
-// Send Email
-sendEmail.addEventListener("click", () => {
-  contactPageEl.classList.remove("active-page");
-  thankYouEl.classList.toggle("active");
-});
+// * Send Email
+// sendEmail.addEventListener("click", () => {
+//   contactPageEl.classList.remove("active-page");
+//   thankYouEl.classList.toggle("active");
+// });
