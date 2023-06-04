@@ -45,22 +45,13 @@ let navlist = document.querySelector(".navlist");
 
 menuIcon.onclick = () => {
   menuIcon.classList.toggle("bx-x");
-  // navlist.classList.toggle("active-display");
   navlist.classList.toggle("open");
-  // header.classList.toggle("sticky");
 };
 
-// menuIcon.addEventListener("click", () => {
-//   console.log("hello");
-//   navlist.classList.add("active-display");
-// });
-
-// const headerSticky = document.querySelector("header.sticky");
 // window.onscroll = () => {
-//   // menuIcon.classList.remove("bx-x");
-//   // navlist.classList.remove("open");
-//   // header.classList.remove("sticky");
-//   console.log("hello");
+//   menuIcon.classList.remove("bx-x");
+//   navlist.classList.remove("open");
+//   // return (onScroll = true);
 // };
 
 // * Project cards for hover effect
@@ -133,9 +124,12 @@ getHomeEls.forEach((element) => {
     fullStackPage.classList.remove("active-page");
     cssEffectPage.classList.remove("active-page");
     designPage.classList.remove("active-page");
+
+    document.documentElement.scrollTop = 0;
   });
 });
 
+// * about page
 getAboutEls.forEach((element) => {
   element.addEventListener("click", () => {
     homePageEl.classList.add("deactive-page");
@@ -149,8 +143,12 @@ getAboutEls.forEach((element) => {
     fullStackPage.classList.remove("active-page");
     cssEffectPage.classList.remove("active-page");
     designPage.classList.remove("active-page");
+
+    document.documentElement.scrollTop = 0;
   });
 });
+
+// * project page
 
 getWorkEls.forEach((element) => {
   element.addEventListener("click", () => {
@@ -165,8 +163,12 @@ getWorkEls.forEach((element) => {
     fullStackPage.classList.remove("active-page");
     cssEffectPage.classList.remove("active-page");
     designPage.classList.remove("active-page");
+
+    document.documentElement.scrollTop = 0;
   });
 });
+
+// * contact page
 
 getContactEls.forEach((element) => {
   element.addEventListener("click", () => {
@@ -181,16 +183,23 @@ getContactEls.forEach((element) => {
     fullStackPage.classList.remove("active-page");
     cssEffectPage.classList.remove("active-page");
     designPage.classList.remove("active-page");
+
+    document.documentElement.scrollTop = 0;
   });
 });
 
+// * more about me page
 capabilityEls.forEach((element) => {
   element.addEventListener("click", () => {
     homePageEl.classList.add("deactive-page");
     aboutPageEl.classList.remove("active-page");
     resumePageEl.classList.add("active-page");
+
+    document.documentElement.scrollTop = 0;
   });
 });
+
+// * web challenge page
 
 webChallengeEl.forEach((element) => {
   element.addEventListener("click", () => {
@@ -200,8 +209,12 @@ webChallengeEl.forEach((element) => {
     cssEffectPage.classList.remove("active-page");
     designPage.classList.remove("active-page");
     webChallengePage.classList.add("active-page");
+
+    document.documentElement.scrollTop = 0;
   });
 });
+
+// * web apps page
 
 webAppEl.forEach((element) => {
   element.addEventListener("click", () => {
@@ -211,8 +224,12 @@ webAppEl.forEach((element) => {
     cssEffectPage.classList.remove("active-page");
     webChallengePage.classList.remove("active-page");
     designPage.classList.remove("active-page");
+
+    document.documentElement.scrollTop = 0;
   });
 });
+
+// * full stack apps page
 
 fullStackEl.forEach((element) => {
   element.addEventListener("click", () => {
@@ -222,8 +239,12 @@ fullStackEl.forEach((element) => {
     cssEffectPage.classList.remove("active-page");
     webChallengePage.classList.remove("active-page");
     designPage.classList.remove("active-page");
+
+    document.documentElement.scrollTop = 0;
   });
 });
+
+// * css effect page
 
 cssEffectEl.forEach((element) => {
   element.addEventListener("click", () => {
@@ -233,6 +254,8 @@ cssEffectEl.forEach((element) => {
     webAppPage.classList.remove("active-page");
     webChallengePage.classList.remove("active-page");
     designPage.classList.remove("active-page");
+
+    document.documentElement.scrollTop = 0;
   });
 });
 
@@ -244,6 +267,8 @@ designEl.forEach((element) => {
     webAppPage.classList.remove("active-page");
     webChallengePage.classList.remove("active-page");
     designPage.classList.add("active-page");
+
+    document.documentElement.scrollTop = 0;
   });
 });
 

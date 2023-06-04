@@ -656,12 +656,12 @@ form {
   margin-bottom: 20px;
 }
 
-/* WEB CHALLENGE PAGE -------------------------------- */
+/* PROJECT PAGE -------------------------------- */
 
-.web-challenge-container {
+/* .web-challenge-container {
   width: 100%;
   height: 100%;
-}
+} */
 
 .on-projects .title {
   margin: 60px 0;
@@ -699,6 +699,7 @@ form {
 .project-card img {
   border-radius: 40px;
   max-width: 100%;
+  height: auto;
   flex: 1;
 }
 
@@ -1015,7 +1016,6 @@ footer nav ul li {
 
 @media only screen and (max-width: 768px) {
   #menu-icon {
-    /* position: fixed; */
     display: inline-block;
     transition: all 0.4s ease;
     cursor: pointer;
