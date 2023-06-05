@@ -27,6 +27,14 @@ let navlist = document.querySelector(".navlist");
 menuIcon.onclick = () => {
   menuIcon.classList.toggle("bx-x");
   navlist.classList.toggle("open");
+  console.log("hello");
+  console.log(window.onscroll);
+};
+
+window.onscroll = () => {
+  menuIcon.classList.remove("bx-x");
+  navlist.classList.remove("open");
+  header.classList.remove("sticky");
 };
 
 // * Card component for hover arrow animation effect
@@ -124,3 +132,6 @@ getWorkEls.forEach((element) => {
     window.open("./work/project.html");
   });
 });
+
+// const menuIcon = document.querySelector("#menu-icon");
+// menuIcon.onclick(console.log("hello"));
