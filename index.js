@@ -1,7 +1,7 @@
 let getHomeEls = document.querySelectorAll(".get-home-page");
 let getAboutEls = document.querySelectorAll(".get-about-page");
 let getContactEls = document.querySelectorAll(".get-contact-page");
-let getWorkEls = document.querySelectorAll(".get-work-page");
+// let getWorkEls = document.querySelectorAll(".get-work-page");
 
 const homePageEl = document.querySelector(".home-page");
 const aboutPageEl = document.querySelector(".about-page");
@@ -127,8 +127,8 @@ capabilityEls.forEach((element) => {
 });
 
 // * get projects page
-getWorkEls.forEach((element) => {
-  element.addEventListener("click", () => {
-    window.open("./work/project.html");
-  });
-});
+// getWorkEls.forEach((element) => {
+//   element.addEventListener("click", () => {
+//     window.open("./work/project.html");
+//   });
+// });
