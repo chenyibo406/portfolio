@@ -1,6 +1,7 @@
 let getHomeEls = document.querySelectorAll(".get-home-page");
 let getAboutEls = document.querySelectorAll(".get-about-page");
 let getContactEls = document.querySelectorAll(".get-contact-page");
+let getWorkEls = document.querySelectorAll(".get-work-page");
 
 const homePageEl = document.querySelector(".home-page");
 const aboutPageEl = document.querySelector(".about-page");
@@ -17,7 +18,7 @@ let cardEls = document.querySelectorAll(".card");
 
 const header = document.querySelector("header");
 window.addEventListener("scroll", function () {
-  header.classList.toggle("sticky", window.scrollY > 50);
+  header.classList.toggle("sticky", window.scrollY > 0);
 });
 
 let menuIcon = document.querySelector("#menu-icon");
@@ -63,7 +64,7 @@ publishmentPage.forEach((element) => {
 
 resumePage.forEach((element) => {
   element.addEventListener("click", () => {
-    console.log("hello");
+    // console.log("hello");
     window.open("./resume/resume.html");
   });
 });
@@ -75,7 +76,6 @@ getHomeEls.forEach((element) => {
   element.addEventListener("click", () => {
     homePageEl.classList.remove("deactive-page");
     aboutPageEl.classList.remove("active-page");
-
     contactPageEl.classList.remove("active-page");
     creativityPageEl.classList.remove("active-page");
 
@@ -115,5 +115,12 @@ capabilityEls.forEach((element) => {
     aboutPageEl.classList.remove("active-page");
     creativityPageEl.classList.add("active-page");
     document.documentElement.scrollTop = 0;
+  });
+});
+
+// * get projects page
+getWorkEls.forEach((element) => {
+  element.addEventListener("click", () => {
+    window.open("./work/project.html");
   });
 });

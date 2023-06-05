@@ -66,19 +66,18 @@ body {
 /* NAVBAR -------------------------------- */
 
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
   border-bottom: 1px solid transparent;
 
-  padding: 60px;
+  width: 100%;
 
+  padding: 60px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-
-  margin-bottom: 20px;
 }
 
 header.sticky {
@@ -87,7 +86,6 @@ header.sticky {
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border: 1px solid rgba(104, 104, 104, 0.18);
-  border-radius: 30px;
 
   padding: initial;
 }
@@ -109,11 +107,6 @@ nav ul {
   font-weight: var(--font-weight-500);
 }
 
-/* nav ul li a:hover {
-  opacity: 0.7;
-  transition: all 100ms ease;
-} */
-
 /* -Nav Menu- */
 
 #menu-icon {
@@ -128,7 +121,10 @@ nav ul {
 
 .main-container {
   width: 100%;
-  padding: 0 60px;
+  padding: 60px;
+  height: 100%;
+  position: relative;
+  padding-bottom: 0;
 }
 
 .profile-linear-animation {
@@ -141,6 +137,10 @@ nav ul {
   background-image: var(--bg-linear-gradient);
   background-size: 400%;
   animation: bg-linear-animation 15s infinite;
+}
+
+.home-page {
+  margin: 120px 0;
 }
 
 .about-page,
@@ -308,6 +308,8 @@ img:not(.project-img):hover {
   display: grid;
   grid-template-rows: repeat(3, auto);
   grid-gap: 20px;
+  height: 100%;
+  margin-top: 120px;
 }
 
 /* -Top column- */
@@ -387,6 +389,8 @@ img:not(.project-img):hover {
 /* CONTACT PAGE --------------------------------------- */
 
 .contact-container {
+  padding-top: 120px;
+  /* height: 100%; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -532,6 +536,7 @@ form {
 /* Creativity PAGE ----------------------------------------- */
 
 .creativity-container {
+  margin-top: 120px;
   display: flex;
   justify-content: center;
   gap: 40px;
@@ -741,16 +746,16 @@ footer nav ul li {
 
 @media only screen and (max-width: 1089px) {
   /* --- Navbar --- */
-  header {
+  /* header {
     display: flex;
     justify-content: center;
-  }
+  } */
   .contact-btn {
     display: none;
   }
-  header .logo {
+  /* header .logo {
     display: none;
-  }
+  } */
 
   /* --- Home Page --- */
   .profile-card {
@@ -871,15 +876,25 @@ footer nav ul li {
 
   header {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
-  header.sticky {
+  /* header.sticky {
     background: rgba(255, 255, 255, 0);
     box-shadow: 1px 1px 2px 0 rgba(31, 38, 135, 0);
     backdrop-filter: initial;
     -webkit-backdrop-filter: blur(0px);
     border: 1px solid rgba(255, 255, 255, 0);
+  } */
+
+  header {
+    background: rgba(151, 151, 151, 0.15);
+    box-shadow: 1px 1px 2px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(104, 104, 104, 0.18);
+
+    padding: initial;
   }
 
   .navlist {
@@ -890,24 +905,16 @@ footer nav ul li {
     padding: 20px 0;
     width: 100vw;
 
-    background: rgba(255, 255, 255, 0.15);
+    /* background: rgba(255, 255, 255, 0.15);
     box-shadow: 1px 1px 2px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.18); */
   }
 
   .nav {
     justify-content: center;
   }
-
-  /* .contact-btn {
-    display: none;
-  } */
-  /* .bx-plus-circle,
-  .bx-minus-circle {
-    display: block !important;
-  } */
 }
 
 @media only screen and (max-width: 665px) {
