@@ -1,39 +1,39 @@
-let cardEls = document.querySelectorAll(".card");
+// let cardEls = document.querySelectorAll(".card");
 let webChallengeEl = document.querySelectorAll(".websites-challenge");
 let webAppEl = document.querySelectorAll(".web-applications");
 let fullStackEl = document.querySelectorAll(".fullstack-applications");
 let frontendEl = document.querySelectorAll(".css-effect");
 let designEl = document.querySelectorAll(".design-card");
-let publishmentPage = document.querySelectorAll(".get-book-link");
+// let publishmentPage = document.querySelectorAll(".get-book-link");
 let blogCardEl = document.querySelectorAll(".blog-card");
 let projectCard = document.querySelectorAll(".project-card");
 
-const header = document.querySelector("header");
+// const header = document.querySelector("header");
 
-window.addEventListener("scroll", function () {
-  header.classList.toggle("sticky", window.scrollY > 50);
-});
+// window.addEventListener("scroll", function () {
+//   header.classList.toggle("sticky", window.scrollY > 50);
+// });
 
 // * Card component for hover arrow animation effect
 
-cardEls.forEach((element) => {
-  element.addEventListener("mouseover", () => {
-    if (element.querySelectorAll(".bx-chevron-right").length > 0) {
-      element.querySelector("i").classList.remove("bx-chevron-right");
-      element.querySelector("i").classList.add("bx-chevrons-right");
-    } else {
-      return;
-    }
-  });
-  element.addEventListener("mouseleave", () => {
-    if (element.querySelectorAll(".bx-chevrons-right").length > 0) {
-      element.querySelector("i").classList.add("bx-chevron-right");
-      element.querySelector("i").classList.remove("bx-chevrons-right");
-    } else {
-      return;
-    }
-  });
-});
+// cardEls.forEach((element) => {
+//   element.addEventListener("mouseover", () => {
+//     if (element.querySelectorAll(".bx-chevron-right").length > 0) {
+//       element.querySelector("i").classList.remove("bx-chevron-right");
+//       element.querySelector("i").classList.add("bx-chevrons-right");
+//     } else {
+//       return;
+//     }
+//   });
+//   element.addEventListener("mouseleave", () => {
+//     if (element.querySelectorAll(".bx-chevrons-right").length > 0) {
+//       element.querySelector("i").classList.add("bx-chevron-right");
+//       element.querySelector("i").classList.remove("bx-chevrons-right");
+//     } else {
+//       return;
+//     }
+//   });
+// });
 
 // * project cards for hover and active effect
 
@@ -50,13 +50,13 @@ projectCard.forEach((element) => {
 
 // * Publishment card for opening the link
 
-publishmentPage.forEach((element) => {
-  element.addEventListener("click", () => {
-    window.open(
-      "https://docs.google.com/document/d/1q0w1twNke7ZH5M2sgqnWbBfuvK6l8NeP-fk2wQWf9Xc/edit#"
-    );
-  });
-});
+// publishmentPage.forEach((element) => {
+//   element.addEventListener("click", () => {
+//     window.open(
+//       "https://docs.google.com/document/d/1q0w1twNke7ZH5M2sgqnWbBfuvK6l8NeP-fk2wQWf9Xc/edit#"
+//     );
+//   });
+// });
 
 // * Publishment card for opening the link
 

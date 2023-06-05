@@ -34,7 +34,7 @@ menuIcon.onclick = () => {
 window.onscroll = () => {
   menuIcon.classList.remove("bx-x");
   navlist.classList.remove("open");
-  header.classList.remove("sticky");
+  // header.classList.remove("sticky");
 };
 
 // * Card component for hover arrow animation effect
