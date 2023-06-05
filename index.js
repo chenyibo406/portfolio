@@ -87,11 +87,9 @@ getHomeEls.forEach((element) => {
 getAboutEls.forEach((element) => {
   element.addEventListener("click", () => {
     homePageEl.classList.add("deactive-page");
-
     contactPageEl.classList.remove("active-page");
     creativityPageEl.classList.remove("active-page");
     aboutPageEl.classList.add("active-page");
-
     document.documentElement.scrollTop = 0;
   });
 });
@@ -116,7 +114,6 @@ capabilityEls.forEach((element) => {
     homePageEl.classList.add("deactive-page");
     aboutPageEl.classList.remove("active-page");
     creativityPageEl.classList.add("active-page");
-
     document.documentElement.scrollTop = 0;
   });
 });

@@ -6,6 +6,30 @@ let frontendEl = document.querySelectorAll(".css-effect");
 let designEl = document.querySelectorAll(".design-card");
 let publishmentPage = document.querySelectorAll(".get-book-link");
 let blogCardEl = document.querySelectorAll(".blog-card");
+let projectCard = document.querySelectorAll(".project-card");
+
+let projectCardH2 = document.querySelectorAll(".project-card h2");
+// let h2 = document.body.querySelectorAll("h2");
+
+// console.log(h2);
+console.log(projectCardH2);
+
+// console.log(projectCard);
+
+projectCard.forEach((element) => {
+  element.addEventListener("mouseover", () => {
+    console.log("mouse over");
+    console.log(element.getElementsByTagName("h2"));
+    // element.getElementsByTagName("h2").classList;
+    element.querySelector("h2").classList.add("deactive-display");
+    element.querySelector(".project-link").classList.add("active-display");
+  });
+  element.addEventListener("mouseleave", () => {
+    console.log("mouse leave");
+    element.querySelector("h2").classList.remove("deactive-display");
+    element.querySelector(".project-link").classList.remove("active-display");
+  });
+});
 
 const header = document.querySelector("header");
 window.addEventListener("scroll", function () {
