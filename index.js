@@ -132,6 +132,3 @@ getWorkEls.forEach((element) => {
     window.open("./work/project.html");
   });
 });
-
-// const menuIcon = document.querySelector("#menu-icon");
-// menuIcon.onclick(console.log("hello"));
