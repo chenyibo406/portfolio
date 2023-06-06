@@ -231,8 +231,6 @@ img:not(.project-img):hover {
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 20px;
   height: 100%;
-
-  /* align-self: center; */
 }
 
 /* -top column- */
@@ -285,7 +283,6 @@ img:not(.project-img):hover {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  /* align-self: flex-start; */
 }
 
 .capability-card,
@@ -393,7 +390,7 @@ img:not(.project-img):hover {
 
 .contact-container {
   padding-top: 120px;
-  /* height: 100%; */
+
   width: 100%;
   display: flex;
   justify-content: center;
