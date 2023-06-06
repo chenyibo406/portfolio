@@ -62,7 +62,7 @@ projectCard.forEach((element) => {
 
 webChallengeEl.forEach((element) => {
   element.addEventListener("click", () => {
-    window.open("./projects/websites.html");
+    window.open("./projects/websites.html", "_self");
   });
 });
 
@@ -70,7 +70,7 @@ webChallengeEl.forEach((element) => {
 
 webAppEl.forEach((element) => {
   element.addEventListener("click", () => {
-    window.open("./projects/applications.html");
+    window.open("./projects/applications.html", "_self");
   });
 });
 
@@ -78,7 +78,7 @@ webAppEl.forEach((element) => {
 
 fullStackEl.forEach((element) => {
   element.addEventListener("click", () => {
-    window.open("./projects/fullstack.html");
+    window.open("./projects/fullstack.html", "_self");
   });
 });
 
@@ -86,7 +86,7 @@ fullStackEl.forEach((element) => {
 
 frontendEl.forEach((element) => {
   element.addEventListener("click", () => {
-    window.open("./projects/frontend.html");
+    window.open("./projects/frontend.html", "_self");
   });
 });
 
@@ -94,7 +94,7 @@ frontendEl.forEach((element) => {
 
 designEl.forEach((element) => {
   element.addEventListener("click", () => {
-    window.open("./projects/ui-ux.html");
+    window.open("./projects/ui-ux.html", "_self");
   });
 });
 

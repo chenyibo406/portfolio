@@ -129,6 +129,6 @@ capabilityEls.forEach((element) => {
 // * get projects page
 getWorkEls.forEach((element) => {
   element.addEventListener("click", () => {
-    window.open("./work/project.html");
+    window.open("./work/project.html", "_self");
   });
 });
