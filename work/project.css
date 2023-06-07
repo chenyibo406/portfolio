@@ -114,7 +114,8 @@
 
 .design-container h2,
 .design-container i {
-  color: red;
+  /* color: red; */
+  color: black;
 }
 
 /* Responsive ------------------------------------------- */
