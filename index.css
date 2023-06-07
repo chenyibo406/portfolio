@@ -334,7 +334,7 @@ img:not(.project-img):hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.6vw;
+  font-size: 2vw;
   letter-spacing: 4px;
   text-transform: uppercase;
   animation: show-up 1s ease-in-out;
@@ -807,6 +807,10 @@ footer nav ul li {
 
 @media only screen and (max-width: 867px) {
   /* --- About page --- */
+  .summary-container .summary-title {
+    font-size: 4vw;
+    margin-bottom: 10px;
+  }
 
   .about-container .top-column {
     display: grid;
@@ -879,21 +883,12 @@ footer nav ul li {
     flex-direction: column;
   }
 
-  /* header.sticky {
-    background: rgba(255, 255, 255, 0);
-    box-shadow: 1px 1px 2px 0 rgba(31, 38, 135, 0);
-    backdrop-filter: initial;
-    -webkit-backdrop-filter: blur(0px);
-    border: 1px solid rgba(255, 255, 255, 0);
-  } */
-
   header {
     background: rgba(151, 151, 151, 0.15);
     box-shadow: 1px 1px 2px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
     border: 1px solid rgba(104, 104, 104, 0.18);
-
     padding: initial;
   }
 
@@ -904,12 +899,6 @@ footer nav ul li {
 
     padding: 20px 0;
     width: 100vw;
-
-    /* background: rgba(255, 255, 255, 0.15);
-    box-shadow: 1px 1px 2px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
-    border: 1px solid rgba(255, 255, 255, 0.18); */
   }
 
   .nav {

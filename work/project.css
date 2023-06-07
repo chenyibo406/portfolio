@@ -32,7 +32,9 @@
 } */
 
 .on-projects .title {
-  margin: 120px 0;
+  /* margin: 100px 0; */
+  margin-top: 120px;
+  margin-bottom: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
