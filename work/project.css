@@ -227,11 +227,11 @@ nav ul {
 .on-projects .content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
   gap: 20px;
   position: relative;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 .on-projects h1 {
@@ -252,8 +252,7 @@ nav ul {
   justify-content: center;
 
   text-align: center;
-  flex: 1;
-
+  /* flex: 1; */
   /* align-items: flex-start; */
 }
 
@@ -261,7 +260,7 @@ nav ul {
   border-radius: 40px;
   max-width: 100%;
   height: auto;
-  flex: 1;
+  /* flex: 1; */
 }
 
 .project-card h2 {
@@ -270,14 +269,6 @@ nav ul {
   position: absolute;
   font-size: 3.5vw;
   text-transform: uppercase;
-}
-
-.deactive-display {
-  display: none;
-}
-
-.active-display {
-  display: flex;
 }
 
 .project-link {
@@ -302,6 +293,14 @@ nav ul {
 .project-link i:hover {
   opacity: 1;
 }
+
+/* .deactive-display {
+  display: none;
+}
+
+.active-display {
+  display: flex;
+} */
 
 .deactive-display {
   display: none;
@@ -496,16 +495,16 @@ footer nav ul li {
   } */
 
   .project-card {
-    width: auto;
+    /* width: auto;
     height: auto;
-    align-self: flex-start;
+    align-self: flex-start; */
   }
   .project-card img {
-    width: auto;
-    height: auto;
+    /* width: auto;
+    height: auto; */
 
-    align-self: flex-start;
-    align-content: flex-start;
+    /* align-self: flex-start;
+    align-content: flex-start; */
   }
   /* .projects-container .title {
     grid-column: 1/2;
