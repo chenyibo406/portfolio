@@ -68,6 +68,7 @@
   justify-content: center;
 
   text-align: center;
+  flex: 1;
 }
 
 .project-card img {
