@@ -27,8 +27,8 @@ let navlist = document.querySelector(".navlist");
 menuIcon.onclick = () => {
   menuIcon.classList.toggle("bx-x");
   navlist.classList.toggle("open");
-  console.log("hello");
-  console.log(window.onscroll);
+  // console.log("hello");
+  // console.log(window.onscroll);
 };
 
 window.onscroll = () => {

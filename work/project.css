@@ -230,8 +230,6 @@ nav ul {
   /* grid-template-rows: repeat(3, 1fr); */
   gap: 20px;
   position: relative;
-  /* align-items: center; */
-  /* justify-content: center; */
 }
 
 .on-projects h1 {

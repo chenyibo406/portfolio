@@ -833,6 +833,10 @@ footer nav ul li {
 }
 
 @media only screen and (max-width: 786px) {
+  .main-container {
+    /* margin: 0 40px; */
+    padding: 40px;
+  }
   /* -home container responsive- */
   .home-container .top-column {
     display: flex;
