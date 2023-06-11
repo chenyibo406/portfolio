@@ -184,7 +184,8 @@ nav ul {
 
 /* Project Page ---------------------------------------------- */
 
-.projects-page {
+.projects-page,
+.on-projects {
   margin: 120px 0;
 }
 
