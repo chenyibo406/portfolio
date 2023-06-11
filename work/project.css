@@ -250,23 +250,27 @@ nav ul {
   justify-content: center;
 
   text-align: center;
-  /* flex: 1; */
-  /* align-items: flex-start; */
 }
 
 .project-card img {
   border-radius: 40px;
   max-width: 100%;
   height: auto;
-  /* flex: 1; */
+
+  filter: brightness(60%);
+
+  /* background-color: rgba(17, 25, 40, 0.909); */
 }
 
 .project-card h2 {
-  /* display: none; */
   color: #ffffff;
   position: absolute;
   font-size: 3.5vw;
   text-transform: uppercase;
+
+  /* background-color: rgba(17, 25, 40, 0.233);
+  width: 100%;
+  height: 100%; */
 }
 
 .project-link {
@@ -292,14 +296,6 @@ nav ul {
   opacity: 1;
 }
 
-/* .deactive-display {
-  display: none;
-}
-
-.active-display {
-  display: flex;
-} */
-
 .deactive-display {
   display: none;
 }
@@ -308,11 +304,10 @@ nav ul {
   display: flex;
 }
 
-.design-container h2,
+/* .design-container h2,
 .design-container i {
-  /* color: red; */
   color: black;
-}
+} */
 
 /* Footer -------------------------------------- */
 
@@ -398,31 +393,11 @@ footer nav ul li {
     padding: initial;
   }
 
-  /* header.sticky {
-    background: rgba(255, 255, 255, 0);
-    box-shadow: 1px 1px 2px 0 rgba(31, 38, 135, 0);
-    backdrop-filter: initial;
-    -webkit-backdrop-filter: blur(0px);
-    border: 1px solid rgba(255, 255, 255, 0);
-  } */
-
-  /* .logo {
-    display: none;
-  } */
-
   .navlist {
     display: none;
     flex-direction: column;
     gap: 20px;
     padding: 20px 0 40px;
-    /* width: 100vw; */
-
-    /* background: rgba(255, 255, 255, 0.15);
-    box-shadow: 1px 1px 2px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
-    border: 1px solid rgba(255, 255, 255, 0.18); */
-    /* border-radius: 30px; */
   }
 
   .project-card h2 {
@@ -456,17 +431,8 @@ footer nav ul li {
 }
 
 @media only screen and (max-width: 798px) {
-  /* .projects-container,
-  .on-projects .content {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .projects-container .title {
-    grid-column: 1/3;
-  } */
-
   .projects-container,
   .on-projects .content {
-    /* grid-template-columns: 1fr; */
     display: flex;
     flex-direction: column;
   }
@@ -484,27 +450,4 @@ footer nav ul li {
   .main-container {
     padding: 20px;
   }
-  /* .projects-container,
-  .on-projects .content {
-    grid-template-columns: 1fr;
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-  } */
-
-  .project-card {
-    /* width: auto;
-    height: auto;
-    align-self: flex-start; */
-  }
-  .project-card img {
-    /* width: auto;
-    height: auto; */
-
-    /* align-self: flex-start;
-    align-content: flex-start; */
-  }
-  /* .projects-container .title {
-    grid-column: 1/2;
-  } */
 }
