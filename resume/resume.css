@@ -348,6 +348,18 @@ p {
 
 /* Responsive ---------------------------------------------  */
 @media only screen and (max-width: 798px) {
+  .container {
+    margin: 20px;
+  }
+
+  .container .contentBox {
+    padding: 0 20px 20px;
+  }
+
+  .rightSide {
+    padding-left: 10px;
+  }
+
   .resume-box .imgBx {
     display: flex;
     justify-content: center;
@@ -382,6 +394,11 @@ p {
 }
 
 @media only screen and (max-width: 608px) {
+  .container {
+    border-left: 0px solid #fff;
+    border-right: 0px solid #fff;
+  }
+
   .about.skills .skill-set {
     grid-template-columns: 1fr;
   }
